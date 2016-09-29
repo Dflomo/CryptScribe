@@ -23,11 +23,11 @@ body {
 }
 
 svg {
-  position: fixed;
-  top: 31%;
-  height: 10%;
-  left: 45%;
-  width: 10%;
+  position: absolute;
+  top: 1%;
+  height: 20%;
+  left: 40%;
+  width: 20%;
 }
 
 .container{
@@ -42,20 +42,20 @@ svg {
 	border-radius: .8em;
 	border: 5px solid #2b313a;
 	background-color: #fff;
-    position: absolute;
-    width: 500px;
-    height: auto;
-    top: 40%;
-    left: 45%;
-    z-index: 2;
-    margin: -100px 0 0 -150px;
-    -webkit-box-shadow: 0px 0px 23px 4px rgba(40,217,252,1);
-    -moz-box-shadow: 0px 0px 23px 4px rgba(40,217,252,1);
-    box-shadow: 0px 0px 23px 4px rgba(40,217,252,1);
+  position: absolute;
+  width: 500px;
+  height: auto;
+  top: 35%;
+  left: 45%;
+  z-index: 2;
+  margin: -100px 0 0 -150px;
+  -webkit-box-shadow: 0px 0px 23px 4px rgba(40,217,252,1);
+  -moz-box-shadow: 0px 0px 23px 4px rgba(40,217,252,1);
+  box-shadow: 0px 0px 23px 4px rgba(40,217,252,1);
 }
 .boxCenter h1{
 	font-size: 32pt;
-	color: #28d9fc;
+	color: #2b313a;
 }
 .boxCenter h2{
 	font-size: 12pt;
@@ -73,5 +73,13 @@ input[type=submit]{
 	font-weight: 600;
 	color: #fff;
 	background: #000;
+}
+input[name=encrypt]{
+  width: 2%;
+  height: 1%;
+  border-radius: 1;
+  color: #FF5733;
+  background: #FF5733;
+  float: right;
 }
 

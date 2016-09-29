@@ -70,4 +70,4 @@ function draw() {
 }
 
 initCanvas();
-setInterval(draw, 45);
+setInterval(draw,45);
