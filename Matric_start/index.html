@@ -47,25 +47,31 @@ function test_input($data) {
 
     <div class="container">
 	    <div class="boxCenter">
-	    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">  
+      
+	    <form method="post" >  
 
 	    <svg viewBox="0 0 160 160" width="160" height="160">
 		  <circle cx="80" cy="80" r="50" />
 		  <g transform=" matrix(0.866, -0.5, 0.25, 0.433, 80, 80)">
-		    <path d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 75,0 75,70 0 0,1 0,70Z" fill="#28d9fc">
-		      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0" dur="1.5s" repeatCount="indefinite" />
+		    <path d="M 0,70 A 65,70 0 0,0 65,0 5,5 0 0,1 90,0 75,70 0 0,1 0,70Z" fill="#BCBCBC">
+		      <animateTransform attributeName="transform" type="rotate" from="360 0 0" to="0 0 0"  dur="1.5s" repeatCount="indefinite" />
 		    </path>
 		  </g>
 		  <path d="M 50,0 A 50,50 0 0,0 -50,0Z" transform="matrix(0.866, -0.5, 0.5, 0.866, 80, 80)" />
 		</svg>
 
 	    <h1>CryptScribe<sup>TM</sup></h1>
-	    <h2>Enter Your Recipient</h2>
-	    <input type="text" name="email" cols="60" value="<?php echo $email;?>">
-	    <h2>Enter Your Message</h2>
-	    <textarea name="comment" rows="8" cols="60"><?php echo $comment;?></textarea>
-	    <input type="submit" name="submit" value="ENCRYPT MESSAGE" class="submit">
-	    </form>
+      <input type="submit" name="submit" value="ENCRYPT" class="submit"
+      formaction="\Users\DORIS\Documents\Programming_WEB_CPP_JAVA\CryptScribe\Matric_start\Matrix_blue\index.html">
+
+      <input type="submit" name="submit" value="DECRYPT" class="submit" formaction="\Users\DORIS\Documents\Programming_WEB_CPP_JAVA\CryptScribe\Matric_start\Matrix_orange\index.html">
+      <!-- <?php 
+      if(isset($_POST['ENCRYPT'])){
+
+      }
+      else if(isset($_POST['DECRYPT']))
+      ?> -->
+      </form>
 	    </div>
     </div>
 

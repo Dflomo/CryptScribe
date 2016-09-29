@@ -1,0 +1,77 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  overflow: hidden;
+}
+
+/* 
+  Rotate the canvas area so that the letters appear mirrored 
+*/
+#matrix {
+  -webkit-transform: rotateY(180deg);
+  transform: rotateY(180deg);
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+svg {
+  position: absolute;
+  top: 1%;
+  height: 20%;
+  left: 40%;
+  width: 20%;
+}
+
+.container{
+	width: 100%;
+	height: auto;
+}
+.boxCenter{
+	font-family: 'Hind', Helvetica, sans-serif;
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 25px;
+	border-radius: .8em;
+	border: 5px solid #2b313a;
+	background-color: #fff;
+  position: absolute;
+  width: 500px;
+  height: auto;
+  top: 28%;
+  left: 45%;
+  z-index: 2;
+  margin: -100px 0 0 -150px;
+  -webkit-box-shadow: 0px 0px 23px 4px rgba(255,87,51,1);
+  -moz-box-shadow: 0px 0px 23px 4px rgba(255,87,51,1);
+  box-shadow: 0px 0px 23px 4px rgba(255,87,51,1);
+}
+.boxCenter h1{
+	font-size: 32pt;
+	color: #2b313a;
+}
+.boxCenter h2{
+	font-size: 12pt;
+	color: #5b5b5b;
+}
+
+textarea{
+	max-width: 90%; 
+    max-height: 260px;
+}
+input[type=submit]{
+	width: 89%;
+	height: 60px;
+	font-size: 18pt;
+	font-weight: 600;
+	color: #fff;
+	background: #000;
+}
+
